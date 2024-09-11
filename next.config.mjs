@@ -7,7 +7,12 @@ const nextConfig = {
 		},
 	},
 	images: {
-		remotePatterns: [],
+		remotePatterns: [
+			{
+				hostname: 'cdn.dummyjson.com',
+				protocol: 'https',
+			}
+		]
 	},
 	headers: async () => {
 		return [

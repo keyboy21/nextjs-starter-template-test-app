@@ -1,9 +1,8 @@
 export const Router = {
 	Home: '/',
-	Portfolio: '/portfolio',
-	Trade: '/trade',
-	Insight: '/insight',
-	Reports: '/reports',
+	Posts: '/posts',
+	Products: '/products',
+	Todos: '/todos',
+	Users: '/users',
 	login: '/auth/login',
-	register: '/auth/register',
 } as const;

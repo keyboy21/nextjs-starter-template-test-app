@@ -1,14 +1,5 @@
-import { routing } from '@/configs/i18n.config';
-import createMiddleware from 'next-intl/middleware';
-
-export default createMiddleware(routing, {
-	localeDetection: false,
-});
+export { auth as middleware } from "@/auth"
 
 export const config = {
-	matcher: [
-		'/',
-		'/(ru|en|uz)/:path*',
-		'/((?!api|_next/static|_next/image|favicon.ico).*)',
-	],
-};
+     matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
+}

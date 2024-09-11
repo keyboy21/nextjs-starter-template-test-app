@@ -11,8 +11,12 @@ const config: Config = {
 			colors: {
 				primary: '#0070f3',
 				secondary: '#f7f7f7',
+				accent: '#f9f9f9',
+				'accent-foreground': '#000000',
+				'destructive': '#dc2626',
+				'destructive-foreground': '#ffffff',
 			}
-		},
+		}
 	},
 	darkMode: 'class',
 };

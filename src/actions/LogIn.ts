@@ -2,6 +2,6 @@
 
 import { signIn } from '@/auth';
 
-export async function logIn(userName: string, password: string) {
-	await signIn('credentials', { userName, password, redirectTo: '/' });
+export async function logIn(username: string, password: string) {
+	await signIn('credentials', { username, password, redirectTo: '/' });
 }
