@@ -19,13 +19,13 @@ export function LoginForm() {
 	const form = useForm<z.infer<typeof loginSchema>>({
 		resolver: zodResolver(loginSchema),
 		defaultValues: {
-			username: 'emilys',
+			userName: 'emilys',
 			password: 'emilyspass',
 		},
 	});
 
 	async function onSubmit(values: z.infer<typeof loginSchema>) {
-		await logIn(values.username, values.password);
+		await logIn(values.userName, values.password);
 	}
 
 	return (
@@ -36,7 +36,7 @@ export function LoginForm() {
 			>
 				<FormField
 					control={form.control}
-					name="username"
+					name="userName"
 					render={({ field }) => (
 						<FormItem>
 							<FormLabel>User Name</FormLabel>

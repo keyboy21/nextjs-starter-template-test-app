@@ -20,9 +20,9 @@ export const config = {
 			},
 			async authorize(credentials) {
 
-				const { username, password } = await loginSchema.parseAsync(credentials);
+				const { userName, password } = await loginSchema.parseAsync(credentials);
 
-				const res = await logIn(username, password);
+				const res = await logIn(userName, password);
 
 				if (!res) {
 					throw new Error('Login failed');
@@ -30,7 +30,7 @@ export const config = {
 
 				const User: User = {
 					id: `${res.id}`,
-					username: res.username,
+					userName: res.userName,
 					firstName: res.firstName,
 					lastName: res.lastName,
 					gender: res.gender,

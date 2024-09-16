@@ -23,7 +23,7 @@ export const Header = async ({ className }: HeaderProps) => {
 			</Link>
 			<Profile
 				firstName={session?.user?.firstName}
-				userName={session?.user?.username}
+				userName={session?.user?.userName}
 				lastName={session?.user?.lastName}
 			/>
 		</header>

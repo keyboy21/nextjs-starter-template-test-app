@@ -4,12 +4,12 @@ import { BASE_URL } from '@/configs/env.config';
 import type { User } from '@/types/user.type';
 import ky from 'ky';
 
-export const logIn = async (username: string, password: string) => {
+export const logIn = async (userName: string, password: string) => {
 
      const res = await ky.post(`${BASE_URL}/auth/login`, {
           method: 'POST',
           json: {
-               username,
+               username: userName,
                password,
           }
      }).json<User>();
