@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "next build --turbo",
+    "build": "next build",
     "start": "next start",
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "clean": "rm -rf .next dist node_modules",
     "lint": "npx @biomejs/biome lint ./src",
     "lint:fix": "npx @biomejs/biome lint --write ./src",
