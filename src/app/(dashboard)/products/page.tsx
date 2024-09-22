@@ -13,9 +13,7 @@ const ProductsPage: PageType = async ({ searchParams }) => {
 				<Heading as={'h2'} weight={'medium'}>
 					List of Products
 				</Heading>
-				<div className="flex items-center gap-3">
-					{/* <AddExpense /> */}
-				</div>
+				<div className="flex items-center gap-3">{/* <AddExpense /> */}</div>
 			</header>
 
 			<Suspense fallback={<TableLoading />}>

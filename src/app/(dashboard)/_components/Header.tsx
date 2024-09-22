@@ -9,7 +9,6 @@ import { redirect } from 'next/navigation';
 import { Profile } from './Profile';
 
 export const Header = async ({ className }: HeaderProps) => {
-
 	const session = await auth();
 
 	if (!session?.user) {
@@ -30,4 +29,4 @@ export const Header = async ({ className }: HeaderProps) => {
 	);
 };
 
-interface HeaderProps extends ComponentProps<'aside'> { }
+interface HeaderProps extends ComponentProps<'aside'> {}

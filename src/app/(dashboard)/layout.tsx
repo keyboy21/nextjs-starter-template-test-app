@@ -1,7 +1,7 @@
 import { Header } from '@/app/(dashboard)/_components/Header';
 import { Sidebar } from '@/app/(dashboard)/_components/Sidebar';
 import type { LayoutType } from '@/types/component.types';
-import { Toaster } from "sonner";
+import { Toaster } from 'sonner';
 
 const Dashboardlayout: LayoutType = async ({ children }) => {
 	return (
@@ -11,7 +11,7 @@ const Dashboardlayout: LayoutType = async ({ children }) => {
 				<Sidebar />
 				<main className="w-full mr-7">{children}</main>
 			</div>
-			< Toaster />
+			<Toaster />
 		</body>
 	);
 };

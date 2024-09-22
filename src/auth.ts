@@ -19,8 +19,8 @@ export const config = {
 				password: { label: 'Password', type: 'password' },
 			},
 			async authorize(credentials) {
-
-				const { userName, password } = await loginSchema.parseAsync(credentials);
+				const { userName, password } =
+					await loginSchema.parseAsync(credentials);
 
 				const res = await logIn(userName, password);
 

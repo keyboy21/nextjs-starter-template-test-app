@@ -39,7 +39,7 @@ export const authConfig = {
 		},
 		authorized({ auth }) {
 			return !!auth;
-		}
+		},
 	},
 	providers: [],
 } satisfies NextAuthConfig;

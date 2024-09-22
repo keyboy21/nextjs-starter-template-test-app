@@ -4,18 +4,15 @@ import type { FC, ReactNode } from 'react';
 type searchParams = { [key: string]: string | string[] | undefined };
 type Params = { [key: string]: string };
 
-export type PageType<
-	SearchParams = searchParams,
-> = FC<{
+export type PageType<SearchParams = searchParams> = FC<{
 	params: Params;
 	searchParams?: SearchParams;
 }>;
 
-export type LayoutType =
-	FC<{
-		params: Params;
-		children: ReactNode;
-	}>;
+export type LayoutType = FC<{
+	params: Params;
+	children: ReactNode;
+}>;
 
 export type ErrorRouteComponent = FC<{
 	error: Error;
@@ -28,9 +25,7 @@ export type RenderBehavior =
 	| 'error'
 	| 'force-static';
 
-export type DynamicMetadata<
-	SearchParams extends object = object,
-> = (
+export type DynamicMetadata<SearchParams extends object = object> = (
 	params: {
 		params: Params;
 		searchParams: SearchParams;

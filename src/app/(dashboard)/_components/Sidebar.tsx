@@ -22,13 +22,16 @@ export const Sidebar = ({ className }: SidebarPrps) => {
 			<nav>
 				<ul className="flex flex-col gap-y-2">
 					<li>
-						<Link href={Router.Home}
+						<Link
+							href={Router.Home}
 							className={cn(
-								"flex gap-5 p-3 rounded-lg w-full items-center hover:bg-slate-300 transition-colors duration-300 cursor-pointer",
+								'flex gap-5 p-3 rounded-lg w-full items-center hover:bg-slate-300 transition-colors duration-300 cursor-pointer',
 								{
-									'bg-white shadow-sm  hover:bg-white': pathName === Router.Home,
-								}
-							)}>
+									'bg-white shadow-sm  hover:bg-white':
+										pathName === Router.Home,
+								},
+							)}
+						>
 							<Gauge size={20} />
 							Home
 						</Link>
@@ -36,12 +39,14 @@ export const Sidebar = ({ className }: SidebarPrps) => {
 					<li>
 						<Link
 							className={cn(
-								"flex gap-5 p-3 rounded-lg w-full items-center hover:bg-slate-300 transition-colors duration-300 cursor-pointer",
+								'flex gap-5 p-3 rounded-lg w-full items-center hover:bg-slate-300 transition-colors duration-300 cursor-pointer',
 								{
-									'bg-white shadow-sm  hover:bg-white': pathName === Router.Posts,
-								}
+									'bg-white shadow-sm  hover:bg-white':
+										pathName === Router.Posts,
+								},
 							)}
-							href={Router.Posts}>
+							href={Router.Posts}
+						>
 							<StickyNote size={20} />
 							Posts
 						</Link>
@@ -49,12 +54,14 @@ export const Sidebar = ({ className }: SidebarPrps) => {
 					<li>
 						<Link
 							className={cn(
-								"flex gap-5 p-3 rounded-lg w-full items-center hover:bg-slate-300 transition-colors duration-300 cursor-pointer",
+								'flex gap-5 p-3 rounded-lg w-full items-center hover:bg-slate-300 transition-colors duration-300 cursor-pointer',
 								{
-									'bg-white shadow-sm  hover:bg-white': pathName === Router.Products,
-								}
+									'bg-white shadow-sm  hover:bg-white':
+										pathName === Router.Products,
+								},
 							)}
-							href={Router.Products}>
+							href={Router.Products}
+						>
 							<ShoppingBasket size={20} />
 							Products
 						</Link>
@@ -62,12 +69,14 @@ export const Sidebar = ({ className }: SidebarPrps) => {
 					<li>
 						<Link
 							className={cn(
-								"flex gap-5 p-3 rounded-lg w-full items-center hover:bg-slate-300 transition-colors duration-300 cursor-pointer",
+								'flex gap-5 p-3 rounded-lg w-full items-center hover:bg-slate-300 transition-colors duration-300 cursor-pointer',
 								{
-									'bg-white shadow-sm  hover:bg-white': pathName === Router.Todos,
-								}
+									'bg-white shadow-sm  hover:bg-white':
+										pathName === Router.Todos,
+								},
 							)}
-							href={Router.Todos}>
+							href={Router.Todos}
+						>
 							<BarChart4 size={20} />
 							Todos
 						</Link>
@@ -75,12 +84,14 @@ export const Sidebar = ({ className }: SidebarPrps) => {
 					<li>
 						<Link
 							className={cn(
-								"flex gap-5 p-3 rounded-lg w-full items-center hover:bg-slate-300 transition-colors duration-300 cursor-pointer",
+								'flex gap-5 p-3 rounded-lg w-full items-center hover:bg-slate-300 transition-colors duration-300 cursor-pointer',
 								{
-									'bg-white shadow-sm  hover:bg-white': pathName === Router.Users,
-								}
+									'bg-white shadow-sm  hover:bg-white':
+										pathName === Router.Users,
+								},
 							)}
-							href={Router.Users}>
+							href={Router.Users}
+						>
 							<Users size={20} />
 							Users
 						</Link>
@@ -91,4 +102,4 @@ export const Sidebar = ({ className }: SidebarPrps) => {
 	);
 };
 
-interface SidebarPrps extends ComponentProps<'aside'> { }
+interface SidebarPrps extends ComponentProps<'aside'> {}

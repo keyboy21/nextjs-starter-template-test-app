@@ -1,3 +1,3 @@
 export const PaginationConfig = {
-     showPerPage: 20,
-}
+	showPerPage: 20,
+};

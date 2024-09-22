@@ -8,9 +8,7 @@ const PostsPage: PageType = async () => {
 				<Heading as={'h2'} weight={'medium'}>
 					List of Posts
 				</Heading>
-				<div className="flex items-center gap-3">
-					{/* <AddExpense /> */}
-				</div>
+				<div className="flex items-center gap-3">{/* <AddExpense /> */}</div>
 			</header>
 		</section>
 	);
